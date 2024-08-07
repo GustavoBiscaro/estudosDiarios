@@ -31,10 +31,10 @@ function App() {
 
       <div>
 
-        {users.map((post, index) => (
-          <Card icon={post.icon} title={post.title}>
-            {post.name}, {post.age}
-          </Card>
+        {users.map((user, index) => (
+          <div>
+             Posição: {index} | nome: {user.name}, idade: {user.age}, {user.address}
+          </div>
         ))}
 
       </div>
